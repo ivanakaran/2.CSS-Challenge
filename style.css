@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Navigation*/
+nav {
+  width: 100%;
+  min-height: 60px;
+}
+
+div.menuBar {
+  display: none;
+}
+
+i.fas.fa-bars {
+  visibility: none;
+}
+
+nav div.logo {
+  font-size: 14px;
+  line-height: 55px;
+  float: left;
+  padding: 0 30px;
+  font-weight: 600;
+}
+
+nav ul {
+  float: right;
+  padding: 0 30px;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  color: #222;
+  text-decoration: none;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.4);
+  padding: 20px 14px;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  border: 1px solid rgba(225, 225, 225, 0.3);
+  background-color: white;
+  padding: 10px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 100px;
+  text-align: center;
+}
+
+nav ul li ul li a:hover {
+  background-color: #f3f3f3;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  margin: 2px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.clr {
+  clear: both;
+}
+
+/*Showcase*/
+#aboutUs {
+  text-transform: uppercase;
+  background-color: #f6f6f6;
+  min-height: 400px;
+  text-align: center;
+}
+
+#aboutUs > div {
+  width: 100%;
+  display: inline-block;
+  line-height: 50px;
+  font-size: 16px;
+  margin: 100px auto;
+}
+
+#aboutUs > div > button {
+  background-color: #000;
+  color: white;
+  border-style: solid;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#aboutUs > div > button > a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+/*Template Boxes*/
+#portfolio {
+  min-height: 100%;
+}
+
+div.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 60px auto;
+}
+
+div.box {
+  width: 20%;
+  padding: 40px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+div.box p:nth-child(1) {
+  font-size: 30px;
+}
+
+div.box p:nth-child(2) {
+  font-size: 11px;
+}
+
+div.coral {
+  background-color: #ff6b57;
+}
+
+div.purple {
+  background-color: #9b59b6;
+}
+
+div.turquoise {
+  background-color: #41c3ac;
+}
+
+div.blue {
+  background-color: #3498db;
+}
+
+/*Choose Demo*/
+
+#services {
+  background-color: #f8f8f8;
+  min-height: 100%;
+}
+
+.mainServices {
+  padding-bottom: 50px;
+}
+
+div.chooseDemo {
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}
+
+div.chooseDemo h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  word-spacing: 10px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+div.demoButtons button {
+  margin-right: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #eeeeee;
+  padding: 12px;
+  border: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+div.demoButtons button a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+}
+
+#all {
+  background-color: #000;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#all a {
+  color: #eeeeee;
+}
+
+.demoOptions {
+  margin-top: 80px;
+}
+
+.firstRow,
+.secondRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.demoOptions img {
+  width: 250px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.demoOptions img:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+/*Features*/
+
+#features {
+  min-height: 100%;
+  color: #696969;
+}
+
+.featureHeader {
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+
+.featureHeader h1 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  word-spacing: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.featureHeader .horLine {
+  width: 5%;
+  border: 1px solid #f3f3f3;
+  margin: 30px auto;
+}
+
+.featuresDescription {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-bottom: 40px;
+}
+
+.firstColumn div,
+.secondColumn div,
+.thirdColumn div {
+  margin-bottom: 40px;
+}
+
+/*Social Media Contact*/
+
+#contact {
+  min-height: 100%;
+}
+
+.contactInfo {
+  background-color: #444444;
+  color: white;
+  text-align: center;
+}
+
+.contactInfo h3 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 1.19em;
+  font-weight: 400;
+}
+
+.socialMedia ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.socialMedia ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.socialMedia ul li a {
+  text-decoration: none;
+}
+
+.socialMedia .fab {
+  color: white;
+  font-size: 20px;
+}
+
+/*Footer*/
+
+footer {
+  min-height: 100%;
+}
+
+footer div {
+  background-color: #000000;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px 5px 15px;
+}
+
+@media only screen and (max-width: 375px) {
+  nav ul {
+    display: none;
+  }
+
+  nav div.logo {
+    padding-left: 20px;
+    width: 50%;
+    float: left;
+    font-size: 12px;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  div.menuBar {
+    display: inline-block;
+    width: 50%;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  i.fas.fa-bars {
+    visibility: visible;
+    float: right;
+    font-size: 16px;
+  }
+
+  #aboutUs {
+    min-height: 151px;
+  }
+
+  #aboutUs > div {
+    line-height: 20px;
+    margin: 30px auto;
+    width: 60%;
+    font-size: 14px;
+    margin: 20px auto;
+  }
+
+  #aboutUs > div > h1 {
+    margin-bottom: 10px;
+  }
+
+  #aboutUs > div > button {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  div.boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.box {
+    margin-top: 10px;
+    width: 30%;
+  }
+
+  .firstRow,
+  .secondRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .demoOptions img {
+    margin-bottom: 20px;
+  }
+
+  .firstRow,
+  .secondRow {
+    margin-bottom: 5px;
+  }
+  .featureHeader {
+    padding-top: 30px;
+  }
+
+  .featureHeader h1 {
+    margin-bottom: 10px;
+  }
+  .featureHeader p {
+    text-align: left;
+  }
+
+  .featureHeader .horLine {
+    margin: 10px auto;
+  }
+
+  .featuresDescription {
+    padding-bottom: 0;
+  }
+
+  .firstColumn div,
+  .secondColumn div,
+  .thirdColumn div {
+    margin-bottom: 10px;
+  }
+
+  footer div {
+    font-size: 8px;
+    padding: 30px 3px 0 3px;
+  }
+}
